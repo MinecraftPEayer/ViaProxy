@@ -42,7 +42,7 @@ public class SplashScreen extends JFrame {
     private void init() throws IOException {
         JPanel contentPane = new JPanel();
         contentPane.setOpaque(false);
-        contentPane.setBackground(new Color(0, 0, 0, 0));
+        contentPane.setBackground(new Color(0, 0, 0, 100));
         contentPane.setLayout(new BorderLayout());
         contentPane.add(new SplashPanel(ImageIO.read(SplashScreen.class.getResourceAsStream("/assets/viaproxy/icons/icon.png"))), BorderLayout.CENTER);
         contentPane.add(this.progressPanel, BorderLayout.SOUTH);
