@@ -30,7 +30,7 @@ public class SplashScreen extends JFrame {
     public SplashScreen() throws IOException {
         this.setAlwaysOnTop(true);
         this.setUndecorated(true);
-        this.setBackground(new Color(0, 0, 0, 100));
+        this.setBackground(Color.WHITE);
         this.setType(Window.Type.UTILITY);
         this.setSize(300, 235);
         this.setLocationRelativeTo(null);
@@ -42,7 +42,7 @@ public class SplashScreen extends JFrame {
     private void init() throws IOException {
         JPanel contentPane = new JPanel();
         contentPane.setOpaque(false);
-        contentPane.setBackground(new Color(0, 0, 0, 100));
+        contentPane.setBackground(Color.WHITE);
         contentPane.setLayout(new BorderLayout());
         contentPane.add(new SplashPanel(ImageIO.read(SplashScreen.class.getResourceAsStream("/assets/viaproxy/icons/icon.png"))), BorderLayout.CENTER);
         contentPane.add(this.progressPanel, BorderLayout.SOUTH);
@@ -70,7 +70,7 @@ public class SplashScreen extends JFrame {
         public SplashPanel(final BufferedImage image) {
             this.image = image;
             this.setOpaque(false);
-            this.setBackground(new Color(0, 0, 0, 100));
+            this.setBackground(Color.WHITE);
         }
 
         @Override
@@ -86,7 +86,7 @@ public class SplashScreen extends JFrame {
 
         public ProgressPanel() {
             this.setOpaque(false);
-            this.setBackground(new Color(0, 0, 0, 100));
+            this.setBackground(Color.WHITE);
             this.setPreferredSize(new Dimension(this.getWidth(), 30));
         }
 
