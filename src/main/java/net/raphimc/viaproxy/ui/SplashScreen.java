@@ -70,7 +70,7 @@ public class SplashScreen extends JFrame {
         public SplashPanel(final BufferedImage image) {
             this.image = image;
             this.setOpaque(false);
-            this.setBackground(new Color(0, 0, 0, 0));
+            this.setBackground(new Color(0, 0, 0, 100));
         }
 
         @Override
@@ -86,7 +86,7 @@ public class SplashScreen extends JFrame {
 
         public ProgressPanel() {
             this.setOpaque(false);
-            this.setBackground(new Color(0, 0, 0, 0));
+            this.setBackground(new Color(0, 0, 0, 100));
             this.setPreferredSize(new Dimension(this.getWidth(), 30));
         }
 
