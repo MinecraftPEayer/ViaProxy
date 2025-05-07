@@ -30,7 +30,7 @@ public class SplashScreen extends JFrame {
     public SplashScreen() throws IOException {
         this.setAlwaysOnTop(true);
         this.setUndecorated(true);
-        this.setBackground(new Color(0, 0, 0, 0));
+        this.setBackground(new Color(0, 0, 0, 100));
         this.setType(Window.Type.UTILITY);
         this.setSize(300, 235);
         this.setLocationRelativeTo(null);
